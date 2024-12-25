@@ -12,7 +12,7 @@ ht_title <- xpathSApply(html, "//div[@class='ht_title']", xmlValue)
 ht_desc <- xpathSApply(html, "//div[@class='ht_desc']", xmlValue)
 
 data <- cbind(ht_title, ht_desc, "---")
-file.path <- "113550171.txt"
+file.path <- "NR.txt"
 write.table(
     data,
     file = file.path,
